@@ -9,7 +9,7 @@ from random import randint
 from os import path
 from time import sleep
 
-# 
+# creating game class
 class Game:
     def __init__(self):
         pg.init()

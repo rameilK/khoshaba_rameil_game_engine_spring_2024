@@ -75,7 +75,7 @@ class Player(Sprite):
         # add y collision later
         self.collide_with_walls('y')
         
-
+# creating wall class
 class Wall(Sprite):
     def __init__(self, game, x, y):
         self.groups = game.all_sprites, game.walls
@@ -91,7 +91,7 @@ class Wall(Sprite):
 
 class PowerUp(Sprite):
     def __init__(self, game, x, y):
-        # add powerup groups later....
+        # add powerup groups later
         self.groups = game.all_sprites
         Sprite.__init__(self, self.groups)
         self.game = game
@@ -102,7 +102,7 @@ class PowerUp(Sprite):
         self.y = y
         self.rect.x = x * TILESIZE
         self.rect.y = y * TILESIZE
-
+# adding a coin collectable
 class Coin(Sprite):
     def __init__(self, game, x, y):
         self.groups = game.all_sprites, game.coin
