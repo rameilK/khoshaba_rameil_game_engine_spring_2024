@@ -22,3 +22,6 @@ BLACK = (0,0,0)
 PURPLE = (128,0,128)
 DARKGREEN = (0,100,0)
 WHITE = (255,255,255)
+
+global markiplier
+markiplier = False
